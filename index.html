@@ -16,6 +16,7 @@
         <br>
         <simple-input type="text" placeholder="Nombre" v-model="input"></simple-input>
         <p>{{input}}</p>
+        <simple-box v-if="message.show" :accepttext="'continuar'" :showcancel="false" :text="message.text" :title="message.title" @close="closeMessage"></simple-box>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/components.js"></script>
