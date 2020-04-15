@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none !important;
+}
+
+.simple-btn {
+    padding: 15px;
+    border: 0;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    background-color: #6495ed;
+    color: white;
+    text-transform: uppercase;
+}
+
+.simple-btn:hover {
+    background-color: #466db6;
+}
+
+.simple-btn.cancel {
+    background-color: #ee3737;
+}
+
+.simple-btn.cancel:hover {
+    background-color: #e42e2e;
+}
+
+.simple-input[type="text"], .simple-input[type="number"], .simple-input[type="tel"],
+.simple-input[type="email"], .simple-input[type="password"], .simple-input {
+    padding: 10px;
+}

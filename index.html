@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test library</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>{{title}}</h1>
+        <simple-file text="Seleccionar JSON" :multiple="true"></simple-file>
+        <simple-button text="Oprimeme" custom="cancel" @click="saludar"></simple-button>
+        <br>
+        <simple-input type="text" placeholder="Nombre" v-model="input"></simple-input>
+        <p>{{input}}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
